@@ -1,0 +1,98 @@
+.pricing__audio {
+  margin: 0px auto 100px;
+}
+.pricing__audio .section__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pricing__audio .section__subtitle {
+  text-align: center;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 40px;
+  color: #5C5C5C;
+  font-size: 17px;
+}
+.pricing__audio .audio__booking__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.audio__booking__content .single__book__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid #111111; */
+  height: 100px;
+  flex-grow: 1;
+  padding:  0 20px;
+  position: relative;
+  background-color: #FFF;
+}
+.audio__booking__content .single__book__box:hover,
+.audio__booking__content .single__book__box:nth-child(2) {
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
+}
+.audio__booking__content .single__book__box::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  /* background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%); */
+  background-color: #000;
+  z-index: -1;
+}
+.audio__booking__content .single__book__box:hover::after,
+.audio__booking__content .single__book__box:nth-child(2)::after {
+  background: linear-gradient(270deg, var(--color__dark__gray) 0%, var(--color__yellow) 100%);
+  background-color: transparent;
+}
+.audio__booking__content .single__book__box div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  font-size: 22px;
+  color: #3D3B42;
+  font-weight: 800;
+}
+.audio__booking__content .single__book__box div .icon {
+  color: var(--color__yellow);
+  font-size: 24px;
+}
+.audio__booking__content .single__book__box p {
+  color: #888;
+  font-size: 15px;
+}
+.audio__booking__content .single__book__box p span {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color__yellow);
+}
+.audio__booking__content .single__book__box:hover p span,
+.audio__booking__content .single__book__box:hover p,
+.audio__booking__content .single__book__box:hover div .icon,
+.audio__booking__content .single__book__box:hover div,
+.audio__booking__content .single__book__box:nth-child(2) p span,
+.audio__booking__content .single__book__box:nth-child(2) p,
+.audio__booking__content .single__book__box:nth-child(2) div .icon,
+.audio__booking__content .single__book__box:nth-child(2) div {
+  color: #FFF;
+} 
+
+@media(max-width: 1199px) {
+  .audio__booking__content .single__book__box:nth-child(2) {
+    order: 1;
+  }
+}
+@media(max-width: 721px) {
+  .audio__booking__content .single__book__box:nth-child(2) {
+    order: 0;
+  }
+}

@@ -1,0 +1,57 @@
+.wanted__section {
+  margin: 100px 0;
+  background: url('https://voicer.softali.net/wordpress/voicer/wp-content/themes/voicer/images/bg_wanttorecord.jpg') #1f1f1f;
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 80px;
+  background-color: #1c1b1f;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+.wanted__section::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+}
+.wanted__section .wanted__title {
+  font-size: 35px;
+  line-height: 105%;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.wanted__section p {
+  color: #D3D3D5;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.wanted__section a {
+  line-height: 73px;
+  font-size: 36px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.wanted__section a .icon {
+  color: var(--color__yellow);
+}
+@media(max-width: 575px) {
+  .wanted__section .wanted__title {
+    font-size: 24px;
+  }
+  .wanted__section p {
+    font-size: 14px;
+  }
+  .wanted__section a {
+    font-size: 22px;
+  }
+}

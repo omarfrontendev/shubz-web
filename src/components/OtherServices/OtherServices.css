@@ -1,0 +1,91 @@
+.our__services {
+  min-height: 70vh;
+  /* background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)),url(https://shubz.org/wp-content/themes/shubz-visuals/images/sharegrid-593288-unsplash.jpg) fixed no-repeat center #333; */
+  background: url('https://voicer.softali.net/wordpress/voicer/wp-content/uploads/2019/06/services-bg-pp-1.jpg') fixed no-repeat center #333;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+  /* background-attachment  : fixed; */
+  background-blend-mode: luminosity;
+}
+.our__services::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  opacity: .5;
+}
+.our__services::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background-color: rgb(7, 6, 6);
+}
+.our__services .container {
+  position: relative;
+  z-index: 1;
+}
+.our__services .section__title {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.our__services .section__title span {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.our__services .section__title::after {
+  display: none;
+}
+.our__services .section__subtitle {
+  text-align: center;
+  color: var(--color__gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+.other__servcies__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.other__servcies__content .box {
+  background-color: rgba(0, 0, 0, 0.514);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 4px;
+  color: #FFF;
+}
+.other__servcies__content .box .box__icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.other__servcies__content .box h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.other__servcies__content .box p {
+  color: var(--color__gray);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  /* margin-bottom: 18px; */
+}
+@media(max-width: 991px) {
+  .other__servcies__content {
+    flex-direction: column;
+  }
+}

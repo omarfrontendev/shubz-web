@@ -1,0 +1,174 @@
+.main__sectoin {
+  padding: 20px 0px;
+  position: relative;
+  background-image: url("../images/hp-service-bg-1.jpg");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.main__sectoin:nth-of-type(3) {
+  background-image: url("../images/hp-service-bg-2.jpg");
+}
+.main__sectoin:nth-of-type(4) {
+  background-image: url("../images/hp-service-bg-3.jpg");
+}
+.main__sectoin:nth-of-type(5) {
+  background-image: url("../images/pexels-dalila-dalprat-2043569.jpg");
+}
+.main__sectoin:nth-of-type(6) {
+  background-image: url("../images/weddings.jpg");
+}
+.main__sectoin:nth-of-type(7) {
+  background-image: url("../images/portraits.jpg");
+}
+.main__sectoin:nth-of-type(8) {
+  background-image: url("../images/commercialshoots\ .jpg");
+  /* justify-content: center; */
+}
+.main__sectoin:nth-of-type(8) .left__col__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__sectoin:nth-of-type(7) .left__col__data,
+.main__sectoin:nth-of-type(5) .left__col__data,
+.main__sectoin:nth-of-type(3) .left__col__data {
+  margin-left: 50%;
+}
+.main__sectoin .photography__title {
+  font-size: var(--ft__44);
+  font-weight: var(--ft__W__bold);
+  letter-spacing: 2px;
+  color: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+}
+.main__sectoin:nth-of-type(8) .photography__title,
+.main__sectoin:nth-of-type(7) .photography__title,
+.main__sectoin:nth-of-type(5) .photography__title,
+.main__sectoin:nth-of-type(3) .photography__title {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.main__sectoin h4 {
+  font-weight: var(--ft__W__medium);
+  font-style: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #191919;
+  margin-top: 4px;
+  font-family: "Poppins", sans-serif;
+}
+.main__sectoin:nth-of-type(8) h4,
+.main__sectoin:nth-of-type(7) h4,
+.main__sectoin:nth-of-type(5) h4,
+.main__sectoin:nth-of-type(3) h4 {
+  color: #ffffff;
+}
+.main__sectoin .pgotography__text {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 30px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.main__sectoin .pgotography__text img {
+  /* flex-grow: 1; */
+  object-fit: contain;
+}
+.main__sectoin .pgotography__text p {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 32px;
+  width: 600px;
+  max-width: 100%;
+}
+.main__sectoin:nth-of-type(8) .pgotography__text p {
+  color: #FFF;
+}
+.main__sectoin:nth-of-type(7) .pgotography__text p,
+.main__sectoin:nth-of-type(5) .pgotography__text p,
+.main__sectoin:nth-of-type(3) .pgotography__text p {
+  color: #bababa;
+}
+.main__section__btn {
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 10px;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.main__section__btn .arrow__icon {
+  font-size: 24px;
+}
+.main__sectoin:nth-of-type(8) .main__section__btn,
+.main__sectoin:nth-of-type(7) .main__section__btn,
+.main__sectoin:nth-of-type(5) .main__section__btn,
+.main__sectoin:nth-of-type(3) .main__section__btn {
+  color: #fff;
+}
+@media(max-width: 1199px) {
+  .main__sectoin {
+    min-height: auto;
+    padding: 80px 0;
+  }
+  .main__sectoin:nth-of-type(7) .left__col__data,
+  .main__sectoin:nth-of-type(5) .left__col__data,
+  .main__sectoin:nth-of-type(3) .left__col__data {
+    margin-left: 40%;
+  }
+}
+@media (max-width: 992px) {
+  .main__sectoin {
+    background-image: none !important;
+  }
+  .main__sectoin:nth-of-type(2) {
+    background-color: #f4c201;
+  }
+  .main__sectoin:nth-of-type(3) {
+    background-color: #111111;
+  }
+  .main__sectoin:nth-of-type(4) {
+    background-color: #fdd43c;
+  }
+  .main__sectoin:nth-of-type(5) {
+    background-color: #25110a;
+  }
+  .main__sectoin:nth-of-type(6) {
+    background-color: #FFF;
+  }
+  .main__sectoin:nth-of-type(7) {
+    background-color: #0d0f16;
+  }
+  .main__sectoin:nth-of-type(8) {
+    background-color: #373737;
+  }
+  .main__sectoin:nth-of-type(7) .left__col__data,
+  .main__sectoin:nth-of-type(5) .left__col__data,
+  .main__sectoin:nth-of-type(3) .left__col__data {
+    margin-left: 0%;
+  }
+  .main__sectoin:nth-of-type(8) .left__col__data {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .main__sectoin .photography__title {
+    font-size: 22px;
+  }
+  .main__sectoin h4 {
+    font-size: 14px;
+  }
+  .main__sectoin .pgotography__text {
+    margin-top: 20px;
+  }
+}

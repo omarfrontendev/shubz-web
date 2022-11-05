@@ -1,0 +1,104 @@
+.categories__section {
+  padding: 130px 0;
+}
+.categories__section .categories__subtitle {
+  font-size: var(--ft__18);
+  color: #FFF;
+  margin-bottom: 14px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+}
+.categories__section .categories__title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.03em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.categories__section .categories__title span {
+  background: linear-gradient(90deg, #743A50 0%, #DEA439 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.categories__section .categories__parag {
+  text-align: center;
+  color: var(--color__gray);
+  font-size: 18px;
+  font-weight: 500;
+}
+.categories__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.categories__content > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  row-gap: 20px;
+  height: 335px;
+  width: 100%;
+}
+.categories__content a .main__button {
+  transform: scale(.8);
+  border-radius: 6px;
+  transition: .3s ease-in-out;
+  white-space: pre;
+}
+.categories__content a:hover .main__button {
+  animation: bigger .6s ease-in-out alternate infinite;
+}
+.categories__content img {
+  width: 150px;
+  transition: .3s ease-in-out;
+}
+.categories__content a:hover img {
+  animation: updown .6s linear alternate infinite;
+}
+@keyframes updown {
+  to{
+    transform: translateY(-8px);
+  }
+}
+@keyframes bigger {
+  form {
+    transform: scale(.8);
+  }
+  to{
+    transform: scale(.85555555555);
+  }
+}
+@media(max-width: 991px) {
+  .categories__content {
+    flex-wrap: wrap;
+  }
+  .categories__section .categories__parag,
+  .categories__section .categories__subtitle {
+    font-size: 16px;
+  }
+  .categories__section .categories__title {
+    font-size: 24px;
+  }
+  .categories__content img {
+    width: 120px;
+  }
+}
+@media(max-width: 575px) {
+  .categories__section .categories__title {
+    font-size: 20px;
+  }
+  .categories__section .categories__parag, .categories__section .categories__subtitle {
+    font-size: 14px;
+  }
+  .categories__content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}

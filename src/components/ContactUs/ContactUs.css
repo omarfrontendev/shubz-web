@@ -1,0 +1,107 @@
+.contact__us {
+  padding: 160px 0 100px;
+}
+.contact__us .section__title {
+  color: #FFF;
+  margin: 0px auto 24px;
+}
+.contact__content {
+  display: flex;
+  column-gap: 40px;
+}
+.contact__content .left {
+  flex: 1;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.contact__content .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact__content .left::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .4;
+}
+.contact__content .contact__form {
+  flex: 1;
+}
+.contact__content .contact__form.main__contact > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.contact__content .contact__form:not(.main__contact) > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 1;
+}
+.contact__form  textarea, 
+.contact__form  input {
+  all: unset;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  resize: none;
+  height: 54px;
+  font-size: 18px;
+  border-radius: 4px;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+}
+.contact__form  textarea {
+  min-height: 180px;
+}
+.contact__form  textarea:focus, 
+.contact__form  input:focus {
+  border: 2px solid #743a50;
+}
+/* .contact__form:not(.main__contact) .select__box, */
+.contact__form:not(.main__contact)  input {
+  flex: 1;
+}
+.contact__form:not(.main__contact) .select__box {
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  justify-content: space-between;
+  font-size: 20px;
+  flex: 1;
+}
+.contact__form:not(.main__contact) .select__box select {
+  border: none;
+  outline: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+.contact__form .submit__btn {
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 18px 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background: unset;
+  background-color: #000;
+  color: #FFF;
+  margin: 20px 0 0 auto;
+  display: block;
+}
+.contact__us .section__title::after {
+  display: none;
+}
+@media(max-width: 991px) {
+  .contact__content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}

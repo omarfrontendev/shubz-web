@@ -1,0 +1,26 @@
+.video__section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 120px;
+}
+.video__section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .6;
+  transition: .3s ease-in-out;
+}
+.video__section:hover::after {
+  opacity: 0;
+  z-index: -1;
+}
+.video__section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
