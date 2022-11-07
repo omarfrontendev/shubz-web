@@ -9,13 +9,8 @@ import Aos from "aos";
 import Banner1 from '../../components/images/Photography/banner/musicvideo.jpg'
 import Banner2 from '../../components/images/Photography/banner/3.jpg'
 import Banner3 from '../../components/images/Photography/banner/videoproduction2.jpg'
-import Music1 from '../../components/videos/Na So - Wyllz master HD.mkv'
-import Music2 from '../../components/videos/Utibe Ima - Wyllz master HD.mkv'
-import Music3 from '../../components/videos/peace final mhd.mkv'
-import MainVideo from '../../components/videos/THE FISHER MAN MAKING_2.mkv'
 import Pricing from '../../components/Pricing'
 import FilmingSection from '../../components/FilmingSection'
-import { Movies } from '../../components/videos'
 
 import "aos/dist/aos.css";
 import './Filming.css'
@@ -62,21 +57,21 @@ const Filming = () => {
   const music = [
     {
       id: 1,
-      src: Music1,
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/Na+So+-+Wyllz+master+HD.mkv',
       name: 'Na So - Wyllz master HD',
       rating: 7.1,
       type: 'Music Videos'
     },
     {
       id: 2,
-      src: Music2,
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/Utibe+Ima+-+Wyllz+master+HD.mkv',
       name: 'Utibe Ima - Wyllz master HD',
       rating: 7.1,
       type: 'Music Videos'
     },
     {
       id: 3,
-      src: Music3,
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/peace+final+mhd.mkv',
       name: 'peace final mhd',
       rating: 7.1,
       type: 'Music Videos'
@@ -86,7 +81,7 @@ const Filming = () => {
   const allMovies = [
     {
       id: 2,
-      src: Movies[0],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/main+montage+new.mp4',
       name: 'Montage',
       rating: 4.8,
       date: 2018,
@@ -95,7 +90,7 @@ const Filming = () => {
     },
     {
       id: 3,
-      src: Movies[1],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/You+are+watching+cor+1.mp4',
       name: 'UMO ENO TV',
       rating: 4.8,
       date: 2018,
@@ -104,7 +99,7 @@ const Filming = () => {
     },
     {
       id: 4,
-      src: Movies[2],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/basumoh.mp4',
       name: 'Basumoh',
       rating: 4.8,
       date: 2018,
@@ -113,7 +108,7 @@ const Filming = () => {
     },
     {
       id: 5,
-      src: Movies[3],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/blow+pos.mp4',
       name: 'Blow Pos',
       rating: 4.8,
       date: 2018,
@@ -122,7 +117,7 @@ const Filming = () => {
     },
     {
       id: 6,
-      src: Movies[4],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/Ketiano.mp4',
       name: 'Ketiano',
       rating: 4.8,
       date: 2018,
@@ -131,7 +126,7 @@ const Filming = () => {
     },
     {
       id: 7,
-      src: Movies[5],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/LATONNE+SIGNATURES.mp',
       name: 'LATONNE SIGNATURES',
       rating: 4.8,
       date: 2018,
@@ -140,7 +135,7 @@ const Filming = () => {
     },
     {
       id: 8,
-      src: Movies[6],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/Westgate+fhd.mp4',
       name: 'Westgate fhd',
       rating: 4.8,
       date: 2018,
@@ -149,7 +144,7 @@ const Filming = () => {
     },
     {
       id: 9,
-      src: Movies[7],
+      src: 'https://bloggydjango.s3.amazonaws.com/videos/made+in+aks.mp4',
       name: 'made in aks',
       rating: 4.8,
       date: 2018,
@@ -254,7 +249,7 @@ const Filming = () => {
         special='Movies'
         dark={true}
       />
-      <Video video={MainVideo} />
+      <Video video='https://bloggydjango.s3.amazonaws.com/videos/THE+FISHER+MAN+MAKING_2.mkv' />
       <Pricing 
         id={5} 
         setOffsetTop={setOffsetTop} 

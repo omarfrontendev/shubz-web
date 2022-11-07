@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { Weddings } from '../videos';
 import Aos from "aos";
 
 import "aos/dist/aos.css";
@@ -26,7 +25,7 @@ const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
         <h2 className="section__title tv">Are You <span>Engaged</span>? Delight Your <br/><span>Wedding</span></h2>
         <div className="weddings__media">
           <div>
-            <video src={Weddings[0]} autoPlay muted controls alt="" />
+            <video src='https://bloggydjango.s3.amazonaws.com/videos/IMG_0256.mp4' autoPlay muted controls alt="" />
           </div>
           <div className='weddings__text'>
             <h4>HOW TO GET AWESOME CINEMATIC WEDDING?</h4>
@@ -39,7 +38,7 @@ const WeddingSection = ({ id, currentSectionId, setOffsetTop }) => {
         </div>
         <div className="weddings__media">
           <div>
-            <video src={Weddings[1]} autoPlay muted controls alt="" />
+            <video src='https://bloggydjango.s3.amazonaws.com/videos/Sweet+bridal.mp4' autoPlay muted controls alt="" />
           </div>
           <div className='weddings__text'>
             <h4>6 Guaranteed Benefits You Get.</h4>
